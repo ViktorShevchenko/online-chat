@@ -1,6 +1,4 @@
-console.log(12);
-
-/*
+/*console.log(12);
 git status
 git add .
 git commit -m'first commit'
@@ -10,5 +8,4 @@ git branch
 git reset
 git clean -df
 git checkout -b <branch>
-
 */
