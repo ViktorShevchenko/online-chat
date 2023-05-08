@@ -5,13 +5,11 @@ type Props = {
 };
 
 const Demo: React.FC<Props> = ({ children }) => {
-  const [count, setCount] = useState<number>(0);
+  const [count, setCount] = useState(0);
   const [log, setLog] = useState<number[]>([]);
 
   useEffect(() => {
-    console.log("count: ", count);
-
-    return ()=>{
+    return () => {
       //unmount
     };
   }, [count]);
@@ -21,14 +19,12 @@ const Demo: React.FC<Props> = ({ children }) => {
   }, []);
 
   useEffect(() => {
-    setLog(prevState => [...prevState, count]);
+    setLog((prevState) => [...prevState, count]);
   }, [count]);
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     setCount((prevState) => prevState + 1);
   };
-
-
 
   return (
     <div>
@@ -41,7 +37,7 @@ const Demo: React.FC<Props> = ({ children }) => {
           <p key={index}>
             <>
               Index {index + 1} - {currentLog}
-            </> 
+            </>
           </p>
         );
       })}
