@@ -8,11 +8,13 @@ const SignUp = () => {
   return (
     <Layout className="flex flex-col">
       <form className="w-full px-14 pt-11 pb-8 rounded-3xl max-w-2xl m-auto mx-auto bg-slate-600 border border-gray-500">
-
-        <Heading className="mb-5">Забули <br></br>адресу електронної<br></br>пошти/пароль?</Heading>
+        <Heading className="mb-5">
+          Забули <br></br>адресу електронної<br></br>пошти/пароль?
+        </Heading>
 
         <p className="text-lg text-center pb-8">
-          Ми надішлемо вам повідомлення з інструкціями <br></br>для скидання пароля
+          Ми надішлемо вам повідомлення з інструкціями <br></br>для скидання
+          пароля
         </p>
 
         <Input type="email" name="email" placeholder="name@example.com" />
@@ -20,8 +22,10 @@ const SignUp = () => {
         <Button type="submit">Надішліть мені повідомлення</Button>
 
         <p className="text-lg text-center">
-        Згадали пароль?
-          <Link href="/sign-in"><span> </span>Увійти</Link>
+          Згадали пароль?
+          <Link href="/sign-in">
+            <span> </span>Увійти
+          </Link>
         </p>
       </form>
     </Layout>
