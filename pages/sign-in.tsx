@@ -5,7 +5,7 @@ import Input from "@/components/shared/forms/Input/Input";
 import Layout from "@/components/shared/layout/Layout";
 import Link from "next/link";
 
-const SignUp = () => {
+const SignIn = () => {
   return (
     <Layout className="flex flex-col">
       <form className="w-full px-14 pt-11 pb-8 rounded-3xl max-w-2xl m-auto mx-auto bg-slate-600 border border-gray-500">
@@ -37,4 +37,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignIn;
