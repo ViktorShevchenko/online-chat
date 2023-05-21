@@ -27,10 +27,7 @@ const SignIn = () => {
         <Button type="submit">Увійти</Button>
 
         <p className="text-lg text-center">
-          У вас немає облікового запису?
-          <Link href="#">
-            <span> </span>Реєстрація
-          </Link>
+          У вас немає облікового запису? <Link href="#">Реєстрація</Link>
         </p>
       </form>
     </Layout>
