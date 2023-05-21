@@ -2,30 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html, body {
-  @apply font-inter;
+html, body, #__next {
+  @apply m-0 min-h-full bg-slate-500 text-white;
 }
 
-// :root {
-//   --foreground-rgb: 0, 0, 0;
-//   --background-start-rgb: 214, 219, 220;
-//   --background-end-rgb: 255, 255, 255;
-// }
+html, body {
+  @apply h-full font-inter;
+}
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --foreground-rgb: 255, 255, 255;
-//     --background-start-rgb: 0, 0, 0;
-//     --background-end-rgb: 0, 0, 0;
-//   }
-// }
+#__next {
+  @apply flex;
+}
 
-// body {
-//   color: rgb(var(--foreground-rgb));
-//   background: linear-gradient(
-//       to bottom,
-//       transparent,
-//       rgb(var(--background-end-rgb))
-//     )
-//     rgb(var(--background-start-rgb));
-// }
+.main {
+  @apply flex-1;
+}
+
+a {
+  @apply text-blue-500 transition-colors;
+
+  &:hover {
+    @apply text-blue-600 underline;
+  }
+}
